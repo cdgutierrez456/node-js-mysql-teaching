@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Proyect</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>MyForm</h1>
+
+    <form id="form">
+      <label for="firstInput">
+        My first input <input id="firstInput" type="text">
+      </label>
+      <label for="secondInput">
+        My second input <input id="secondInput" type="text">
+      </label>
+      <button id="saveData" type="submit">Save</button>
+    </form>
+
+    <button type="button" id="getData">Get info DB</button>
+
+    <section id="showInformation"></section>
+  </main>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
