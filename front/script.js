@@ -42,13 +42,6 @@ const setProductsHTML = (products) => {
   }
 }
 
-const saveData = async (object) => {
-  const saved = await fetch(url, {
-    method: "POST",
-    body: JSON.stringify(object)
-  })
-}
-
 btnSaveData.addEventListener("click", (e) => {
   e.preventDefault()
   let body = {
@@ -57,3 +50,10 @@ btnSaveData.addEventListener("click", (e) => {
   }
   saveData(body)
 })
+
+const saveData = async (object) => {
+  const saved = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(object)
+  })
+}
